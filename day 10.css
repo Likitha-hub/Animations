@@ -1,0 +1,77 @@
+ table {
+    border: 2 solid black;
+    width:80%;
+    margin: auto;
+    text-align: center;
+   
+}  
+img{
+   width: 150px;
+   height:150px;
+}
+ .right:hover{
+    animation-name:rotateImg; 
+    animation-duration: 7s;
+    animation-delay:2s;
+    animation-direction: linear ;
+
+ } 
+
+ @keyframes rotateImg{
+  0%{
+   transform: translateX(0,0) rotate(0deg);
+  }
+  30%{
+
+      transform: translateX(150px) rotate(180deg);
+  }  
+  50%{
+      transform: translateX(300px) rotate(360deg);
+  }
+
+   }
+
+.left:hover{
+    animation-name:leftRotate; 
+    animation-duration: 7s;
+    animation-delay:2s;
+    animation-direction: linear ;
+
+ } 
+
+ 
+ /* .left:hover{
+   animation: leftRotate 7s 2 linear ;
+ }  */
+ @keyframes leftRotate{
+  0%{
+   transform: translate(0,0) rotate(0deg);
+  }
+  30%{
+
+      transform: translate(-150px,0px) rotate(-180deg);
+  }  
+  50%{
+      transform: translate(-300px,0px) rotate(-360deg);
+  }
+
+   }
+   .bottom:hover{
+    animation-name:bottomImg; 
+    animation-duration: 7s;
+    animation-delay:2s;
+    animation-direction: linear ;
+
+ } 
+ @keyframes bottomImg{
+  0%{
+   transform: translate(0,0) rotate(0deg);
+  }
+  30%{
+
+      transform: translate(0px,150px) rotate(180deg);
+  }  
+  50%{
+      transform: translate(0px,300px) rotate(360deg);
+  }
+ }
